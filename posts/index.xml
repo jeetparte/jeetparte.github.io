@@ -1,0 +1,96 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on sailing on lambdas ⛵️</title>
+		<link>https://jeetparte.github.io/posts/</link>
+		<description>Recent content in Posts on sailing on lambdas ⛵️</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Thu, 05 Mar 2020 23:31:53 +0530</lastBuildDate>
+		<atom:link href="https://jeetparte.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Siri Touch Typing Easter Egg</title>
+			<link>https://jeetparte.github.io/posts/siri-touch-typing-easter-egg/</link>
+			<pubDate>Thu, 05 Mar 2020 23:31:53 +0530</pubDate>
+			
+			<guid>https://jeetparte.github.io/posts/siri-touch-typing-easter-egg/</guid>
+			<description>If you type the home row keys of the QWERTY layout into Spotlight Search twice, Siri understands that you are touch typing and suggests a relevant page from Wikipedia.
+Steps to reproduce  Make sure you&amp;rsquo;re connected to the internet. Type asdfjkl;asdfjkl; into Spotlight Search.  (TODO - I want to add the image here. Figuring out how to do that in Hugo.)</description>
+			<content type="html"><![CDATA[<p>If you type the home row keys of the QWERTY layout into Spotlight Search twice, Siri understands that you are touch typing and suggests a relevant page from Wikipedia.</p>
+<h2 id="steps-to-reproduce">Steps to reproduce</h2>
+<ol>
+<li>Make sure you&rsquo;re connected to the internet.</li>
+<li>Type <code>asdfjkl;asdfjkl;</code> into Spotlight Search.</li>
+</ol>
+<p>(TODO - <em>I want to add the image here. Figuring out how to do that in Hugo.</em>)</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>ArgumentNullException / Don&#39;t forget the precedent!</title>
+			<link>https://jeetparte.github.io/posts/argumentnullexception/</link>
+			<pubDate>Sat, 29 Feb 2020 22:38:55 +0530</pubDate>
+			
+			<guid>https://jeetparte.github.io/posts/argumentnullexception/</guid>
+			<description>At work this week, I discovered a quirk in the .NET API.
+An ArgumentException is thrown when one of the arguments to a method is invalid. A more specific ArgumentException is an ArgumentNullException which (as you may have guessed) is thrown when an argument is invalid because it is null.
+The funny thing is that while the base class provides this constructor -
+public ArgumentException (string message, string paramName);  the one provided by the derived class is -</description>
+			<content type="html"><![CDATA[<p>At work this week, I discovered a quirk in the .NET API.</p>
+<p>An <a href="https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception?view=netframework-4.8">ArgumentException</a> is thrown when one of the arguments to a method is invalid.
+A more specific <code>ArgumentException</code> is an <a href="https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception?view=netframework-4.8">ArgumentNullException</a> which (as you may have guessed) is thrown when an argument is invalid because it is <code>null</code>.</p>
+<p>The funny thing is that while the base class provides this constructor -</p>
+<pre><code>public ArgumentException (string message, string paramName);
+</code></pre>
+<p>the one provided by the derived class is -</p>
+<pre><code>public ArgumentNullException (string paramName, string message);
+</code></pre>
+<p>The order of the parameters is swapped!</p>
+<p>Inconsistencies like these can lead to confusion. In our case, we ended up with code that was passing arguments to the constructor in the wrong order -</p>
+<pre><code>throw new ArgumentNullException(messageArg, paramNameArg);
+</code></pre>
+<h2 id="the-moral">The moral</h2>
+<p>Always strive for consistent interfaces.</p>
+<p>Breaking reasonable expectations by creating inconsistencies introduces accidental complexity. And for us mere mortals, <em>accidental complexity is the enemy!</em></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Setting Up This Site</title>
+			<link>https://jeetparte.github.io/posts/setting-up-this-site/</link>
+			<pubDate>Sat, 22 Feb 2020 15:12:38 +0530</pubDate>
+			
+			<guid>https://jeetparte.github.io/posts/setting-up-this-site/</guid>
+			<description>A quick update about this site - I&amp;rsquo;m in the middle of setting it up so that it&amp;rsquo;s just as I&amp;rsquo;d want (or failing that, till all the essentials are met).
+Here&amp;rsquo;s what I&amp;rsquo;m working on -
+ On the technical side, I need to get this site deployed. (It wasn&amp;rsquo;t when I wrote this!). I&amp;rsquo;m using Hugo - the static site generator. Also, need to enable comments so that we can talk to each other :P Importantly, I want this site to be organized so that it&amp;rsquo;s easy to navigate and view related content.</description>
+			<content type="html"><![CDATA[<p>A quick update about this site - I&rsquo;m in the middle of setting it up so that it&rsquo;s just as I&rsquo;d want (or failing that, till all the essentials are met).</p>
+<p>Here&rsquo;s what I&rsquo;m working on -</p>
+<ol>
+<li>On the technical side, I need to get this site deployed. (It wasn&rsquo;t when I wrote this!). I&rsquo;m using <a href="https://gohugo.io">Hugo - the static site generator</a>.</li>
+<li>Also, need to enable comments so that we can talk to each other :P</li>
+<li>Importantly, I want this site to be organized so that it&rsquo;s easy to navigate and view related content. Maybe simple classfication features like <em>Tags</em> and <em>Categories</em> will do it. But I&rsquo;ll think some more and experiment a bit.</li>
+</ol>
+<p><strong>P.S.</strong> Since I&rsquo;m learning Hugo and <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, you might see posts about these under a <em>Learning</em> category.<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+]]></content>
+		</item>
+		
+		<item>
+			<title>First Post</title>
+			<link>https://jeetparte.github.io/posts/first-post/</link>
+			<pubDate>Sat, 15 Feb 2020 23:51:21 +0530</pubDate>
+			
+			<guid>https://jeetparte.github.io/posts/first-post/</guid>
+			<description>A new blog is born. Readers, you are welcome!</description>
+			<content type="html"><![CDATA[<p>A new blog is born. Readers, you are welcome!</p>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>

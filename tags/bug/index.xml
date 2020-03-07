@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bug on sailing on lambdas ⛵️</title>
+    <link>https://jeetparte.github.io/tags/bug/</link>
+    <description>Recent content in bug on sailing on lambdas ⛵️</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 29 Feb 2020 22:38:55 +0530</lastBuildDate>
+    
+	<atom:link href="https://jeetparte.github.io/tags/bug/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ArgumentNullException / Don&#39;t forget the precedent!</title>
+      <link>https://jeetparte.github.io/posts/argumentnullexception/</link>
+      <pubDate>Sat, 29 Feb 2020 22:38:55 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/posts/argumentnullexception/</guid>
+      <description>At work this week, I discovered a quirk in the .NET API.
+An ArgumentException is thrown when one of the arguments to a method is invalid. A more specific ArgumentException is an ArgumentNullException which (as you may have guessed) is thrown when an argument is invalid because it is null.
+The funny thing is that while the base class provides this constructor -
+public ArgumentException (string message, string paramName);  the one provided by the derived class is -</description>
+    </item>
+    
+  </channel>
+</rss>

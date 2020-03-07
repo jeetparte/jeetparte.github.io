@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>site maintenance on sailing on lambdas ⛵️</title>
+    <link>https://jeetparte.github.io/tags/site-maintenance/</link>
+    <description>Recent content in site maintenance on sailing on lambdas ⛵️</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 22 Feb 2020 15:12:38 +0530</lastBuildDate>
+    
+	<atom:link href="https://jeetparte.github.io/tags/site-maintenance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting Up This Site</title>
+      <link>https://jeetparte.github.io/posts/setting-up-this-site/</link>
+      <pubDate>Sat, 22 Feb 2020 15:12:38 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/posts/setting-up-this-site/</guid>
+      <description>A quick update about this site - I&amp;rsquo;m in the middle of setting it up so that it&amp;rsquo;s just as I&amp;rsquo;d want (or failing that, till all the essentials are met).
+Here&amp;rsquo;s what I&amp;rsquo;m working on -
+ On the technical side, I need to get this site deployed. (It wasn&amp;rsquo;t when I wrote this!). I&amp;rsquo;m using Hugo - the static site generator. Also, need to enable comments so that we can talk to each other :P Importantly, I want this site to be organized so that it&amp;rsquo;s easy to navigate and view related content.</description>
+    </item>
+    
+  </channel>
+</rss>

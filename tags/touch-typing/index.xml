@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>touch typing on sailing on lambdas ⛵️</title>
+    <link>https://jeetparte.github.io/tags/touch-typing/</link>
+    <description>Recent content in touch typing on sailing on lambdas ⛵️</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 05 Mar 2020 23:31:53 +0530</lastBuildDate>
+    
+	<atom:link href="https://jeetparte.github.io/tags/touch-typing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Siri Touch Typing Easter Egg</title>
+      <link>https://jeetparte.github.io/posts/siri-touch-typing-easter-egg/</link>
+      <pubDate>Thu, 05 Mar 2020 23:31:53 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/posts/siri-touch-typing-easter-egg/</guid>
+      <description>If you type the home row keys of the QWERTY layout into Spotlight Search twice, Siri understands that you are touch typing and suggests a relevant page from Wikipedia.
+Steps to reproduce  Make sure you&amp;rsquo;re connected to the internet. Type asdfjkl;asdfjkl; into Spotlight Search.  (TODO - I want to add the image here. Figuring out how to do that in Hugo.)</description>
+    </item>
+    
+  </channel>
+</rss>
