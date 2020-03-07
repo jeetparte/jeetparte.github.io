@@ -14,15 +14,15 @@
 			<pubDate>Thu, 05 Mar 2020 23:31:53 +0530</pubDate>
 			
 			<guid>https://jeetparte.github.io/posts/siri-touch-typing-easter-egg/</guid>
-			<description>If you type the home row keys of the QWERTY layout into Spotlight Search twice, Siri understands that you are touch typing and suggests a relevant page from Wikipedia.
-Steps to reproduce  Make sure you&amp;rsquo;re connected to the internet. Type asdfjkl;asdfjkl; into Spotlight Search.  (TODO - I want to add the image here. Figuring out how to do that in Hugo.)</description>
-			<content type="html"><![CDATA[<p>If you type the home row keys of the QWERTY layout into Spotlight Search twice, Siri understands that you are touch typing and suggests a relevant page from Wikipedia.</p>
+			<description>If you type the home row keys of the QWERTY layout into Spotlight Search twice, Siri understands that you are touch typing.
+Steps to reproduce  Make sure you&amp;rsquo;re connected to the internet. Type asdfjkl;asdfjkl; into Spotlight Search.  </description>
+			<content type="html"><![CDATA[<p><img src="/img/siri-touch-typing-easter-egg.png" alt="Siri Touch Typing Easter Egg">
+<em>If you type the home row keys of the QWERTY layout into Spotlight Search twice, Siri understands that you are touch typing.</em></p>
 <h2 id="steps-to-reproduce">Steps to reproduce</h2>
 <ol>
 <li>Make sure you&rsquo;re connected to the internet.</li>
 <li>Type <code>asdfjkl;asdfjkl;</code> into Spotlight Search.</li>
 </ol>
-<p>(TODO - <em>I want to add the image here. Figuring out how to do that in Hugo.</em>)</p>
 ]]></content>
 		</item>
 		

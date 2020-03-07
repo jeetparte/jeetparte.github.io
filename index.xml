@@ -17,8 +17,8 @@
       <pubDate>Thu, 05 Mar 2020 23:31:53 +0530</pubDate>
       
       <guid>https://jeetparte.github.io/posts/siri-touch-typing-easter-egg/</guid>
-      <description>If you type the home row keys of the QWERTY layout into Spotlight Search twice, Siri understands that you are touch typing and suggests a relevant page from Wikipedia.
-Steps to reproduce  Make sure you&amp;rsquo;re connected to the internet. Type asdfjkl;asdfjkl; into Spotlight Search.  (TODO - I want to add the image here. Figuring out how to do that in Hugo.)</description>
+      <description>If you type the home row keys of the QWERTY layout into Spotlight Search twice, Siri understands that you are touch typing.
+Steps to reproduce  Make sure you&amp;rsquo;re connected to the internet. Type asdfjkl;asdfjkl; into Spotlight Search.  </description>
     </item>
     
     <item>
