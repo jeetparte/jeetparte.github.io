@@ -5,8 +5,23 @@
 		<description>Recent content in Posts on sailing on lambdas ⛵️</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Thu, 05 Mar 2020 23:31:53 +0530</lastBuildDate>
+		<lastBuildDate>Fri, 20 Mar 2020 23:33:15 +0530</lastBuildDate>
 		<atom:link href="https://jeetparte.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Lisp: cons, car and cdr</title>
+			<link>https://jeetparte.github.io/posts/lisp-cons-car-cdr/</link>
+			<pubDate>Fri, 20 Mar 2020 23:33:15 +0530</pubDate>
+			
+			<guid>https://jeetparte.github.io/posts/lisp-cons-car-cdr/</guid>
+			<description>There is a footnote in chapter 2 of SICP that explains what the names of these popular Lisp primitives stand for -
+ The name cons stands for “construct.” The names car and cdr derive from the original implementation of Lisp on the IBM 704. That machine had an addressing scheme that allowed one to reference the “address” and “decrement” parts of a memory location. car stands for “Contents of Address part of Register” and cdr (pronounced “could-er”) stands for “Contents of Decrement part of Register.</description>
+			<content type="html"><![CDATA[<p>There is a footnote in chapter 2 of <a href="https://g.co/kgs/GPVfya">SICP</a> that explains what the names of these popular Lisp primitives stand for -</p>
+<blockquote>
+<p>The name <code>cons</code> stands for “construct.” The names <code>car</code> and <code>cdr</code> derive from the original implementation of Lisp on the <em>IBM 704</em>. That machine had an addressing scheme that allowed one to reference the “address” and “decrement” parts of a memory location. <code>car</code> stands for “Contents of Address part of Register” and <code>cdr</code> (pronounced “could-er”) stands for “Contents of Decrement part of Register.”</p>
+</blockquote>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Siri Touch Typing Easter Egg in macOS</title>
