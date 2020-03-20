@@ -18,7 +18,7 @@
       
       <guid>https://jeetparte.github.io/posts/siri-touch-typing-easter-egg/</guid>
       <description>If you type the home row keys of the QWERTY layout into macOS&amp;rsquo; Spotlight Search twice, Siri understands that you are touch typing.
-Steps to reproduce  Make sure you&amp;rsquo;re connected to the internet. Type asdfjkl;asdfjkl; into Spotlight Search.  </description>
+Steps to reproduce  Make sure you&amp;rsquo;re connected to the Internet. Type asdfjkl;asdfjkl; into Spotlight Search.  </description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@ Most content here will relate in some way to software development and code. Howe
     </item>
     
     <item>
-      <title>First Post</title>
+      <title>First Blog Post</title>
       <link>https://jeetparte.github.io/posts/first-post/</link>
       <pubDate>Sat, 15 Feb 2020 23:51:21 +0530</pubDate>
       
