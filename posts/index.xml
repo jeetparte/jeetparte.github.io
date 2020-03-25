@@ -5,8 +5,70 @@
 		<description>Recent content in Posts on sailing on lambdas ⛵️</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Fri, 20 Mar 2020 23:33:15 +0530</lastBuildDate>
+		<lastBuildDate>Wed, 25 Mar 2020 21:00:50 +0530</lastBuildDate>
 		<atom:link href="https://jeetparte.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>SICP Solutions - Exercise 2.6</title>
+			<link>https://jeetparte.github.io/posts/sicp-exercise-2.6-solved/</link>
+			<pubDate>Wed, 25 Mar 2020 21:00:50 +0530</pubDate>
+			
+			<guid>https://jeetparte.github.io/posts/sicp-exercise-2.6-solved/</guid>
+			<description>This was an interesting problem. Thought I&amp;rsquo;d share it here.
+Scene We are given the Church numeral representation of the number zero:
+(define zero (lambda (f) (lambda (x) x))) And a function that given a (positive) Church numeral, returns the next one:
+define (add-1 n) (lambda (f) (lambda (x) (f ((n f) x))))) Part 1 Question:
+ Define one and two directly (not in terms of zero and add- 1). (Hint: Use substitution to evaluate (add-1 zero)).</description>
+			<content type="html"><![CDATA[<p>This was an interesting problem. Thought I&rsquo;d share it here.</p>
+<h2 id="scene">Scene</h2>
+<p>We are given the <a href="https://en.wikipedia.org/wiki/Church_encoding#Church_numerals">Church numeral</a> representation of the number zero:</p>
+<pre><code>(define zero (lambda (f) (lambda (x) x)))
+</code></pre><p>And a function that given a (positive) Church numeral, returns the next one:</p>
+<pre><code>define (add-1 n)
+  (lambda (f) (lambda (x) (f ((n f) x)))))
+</code></pre><h2 id="part-1">Part 1</h2>
+<p><em>Question:</em></p>
+<blockquote>
+<p>Define <code>one</code> and <code>two</code> directly (not in terms of <code>zero</code> and <code>add- 1</code>). (Hint: Use substitution to evaluate <code>(add-1 zero)</code>).</p>
+</blockquote>
+<p><em>Answer:</em></p>
+<p>Here are the steps for the substitution:</p>
+<pre><code>(add-1 zero)
+</code></pre><ol>
+<li>Evaluate zero.</li>
+</ol>
+<pre><code>(add-1 (lambda (f) (lambda (x) x)))
+</code></pre><ol start="2">
+<li>Apply the lambda argument to <code>add-1</code>.</li>
+</ol>
+<pre><code>; body of add-1
+(lambda (f) (lambda (x) (f ((n f) x))))) ; substitute the 'n' here
+
+; result
+(lambda (f) (lambda (x) (f (((lambda (f) (lambda (x) x)) f) x))))
+</code></pre><ol start="3">
+<li>Apply lambda procedure to &lsquo;f&rsquo;.</li>
+</ol>
+<pre><code>(lambda (f) (lambda (x) (f ((lambda (x) x) x))))
+</code></pre><ol start="4">
+<li>Apply lambda procedure to &lsquo;x&rsquo;.</li>
+</ol>
+<pre><code>(lambda (f) (lambda (x) (f x)))
+</code></pre><ol start="5">
+<li>No more arguments to apply. This is the body for our procedure that defines &lsquo;one&rsquo;:</li>
+</ol>
+<pre><code>(define one (lambda (f) (lambda (x) (f x))))
+</code></pre><p>Similiarly, we can find &lsquo;two&rsquo; by evaluating <code>(add-1 one)</code>:</p>
+<pre><code>(define two (lambda (f) (lambda (x) (f (f x)))))
+</code></pre><h2 id="part-2">Part 2</h2>
+<p><em>Question:</em></p>
+<blockquote>
+<p>Give a direct definition of the addition procedure + (not in terms of repeated application of add-1).</p>
+</blockquote>
+<p><em>Answer:</em></p>
+<p>I leave this exercise to the reader. You can check your answer <a href="https://github.com/jeetparte/sicp/blob/master/chapter2/sicp2.6.rkt">here</a>.</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Lisp: cons, car and cdr</title>

@@ -6,10 +6,23 @@
     <description>Recent content on sailing on lambdas ⛵️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Mar 2020 23:33:15 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2020 21:00:50 +0530</lastBuildDate>
     
 	<atom:link href="https://jeetparte.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SICP Solutions - Exercise 2.6</title>
+      <link>https://jeetparte.github.io/posts/sicp-exercise-2.6-solved/</link>
+      <pubDate>Wed, 25 Mar 2020 21:00:50 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/posts/sicp-exercise-2.6-solved/</guid>
+      <description>This was an interesting problem. Thought I&amp;rsquo;d share it here.
+Scene We are given the Church numeral representation of the number zero:
+(define zero (lambda (f) (lambda (x) x))) And a function that given a (positive) Church numeral, returns the next one:
+define (add-1 n) (lambda (f) (lambda (x) (f ((n f) x))))) Part 1 Question:
+ Define one and two directly (not in terms of zero and add- 1). (Hint: Use substitution to evaluate (add-1 zero)).</description>
+    </item>
     
     <item>
       <title>Lisp: cons, car and cdr</title>
