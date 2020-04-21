@@ -6,10 +6,20 @@
     <description>Recent content on sailing on lambdas ⛵️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2020 21:00:50 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 19 Feb 2020 21:11:42 +0530</lastBuildDate>
     
 	<atom:link href="https://jeetparte.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Need for Digital Literacy</title>
+      <link>https://jeetparte.github.io/posts/need-for-digital-literacy/</link>
+      <pubDate>Tue, 21 Apr 2020 20:21:00 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/posts/need-for-digital-literacy/</guid>
+      <description>These last few weeks, with the lockdown in place and having to work from home, I&amp;rsquo;m being utilized to the fullest by those in my social circle. When it comes to help with tech stuff that is :)
+While it is clear that these people, friends and family, are a little lacking in technical knowledge which we techies consider &amp;lsquo;basic&amp;rsquo;, I think there are some deeper issues that create such situations.</description>
+    </item>
     
     <item>
       <title>SICP Solutions - Exercise 2.6</title>
@@ -17,11 +27,11 @@
       <pubDate>Wed, 25 Mar 2020 21:00:50 +0530</pubDate>
       
       <guid>https://jeetparte.github.io/posts/sicp-exercise-2.6-solved/</guid>
-      <description>This was an interesting problem. Thought I&amp;rsquo;d share it here.
+      <description>This was an interesting problem. Thought I&amp;rsquo;d share my solution here.
 Scene We are given the Church numeral representation of the number zero:
 (define zero (lambda (f) (lambda (x) x))) And a function that given a (positive) Church numeral, returns the next one:
 define (add-1 n) (lambda (f) (lambda (x) (f ((n f) x))))) Part 1 Question:
- Define one and two directly (not in terms of zero and add- 1). (Hint: Use substitution to evaluate (add-1 zero)).</description>
+ Define one and two directly (not in terms of zero and add- 1).</description>
     </item>
     
     <item>

@@ -17,11 +17,11 @@
       <pubDate>Wed, 25 Mar 2020 21:00:50 +0530</pubDate>
       
       <guid>https://jeetparte.github.io/posts/sicp-exercise-2.6-solved/</guid>
-      <description>This was an interesting problem. Thought I&amp;rsquo;d share it here.
+      <description>This was an interesting problem. Thought I&amp;rsquo;d share my solution here.
 Scene We are given the Church numeral representation of the number zero:
 (define zero (lambda (f) (lambda (x) x))) And a function that given a (positive) Church numeral, returns the next one:
 define (add-1 n) (lambda (f) (lambda (x) (f ((n f) x))))) Part 1 Question:
- Define one and two directly (not in terms of zero and add- 1). (Hint: Use substitution to evaluate (add-1 zero)).</description>
+ Define one and two directly (not in terms of zero and add- 1).</description>
     </item>
     
   </channel>

@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jeetparte.github.io/posts/</loc>
-    <lastmod>2020-03-25T21:00:50+05:30</lastmod>
+    <loc>https://jeetparte.github.io/tags/digital-literacy/</loc>
+    <lastmod>2020-04-21T20:21:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://jeetparte.github.io/</loc>
-    <lastmod>2020-03-25T21:00:50+05:30</lastmod>
+    <loc>https://jeetparte.github.io/posts/</loc>
+    <lastmod>2020-04-21T20:21:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeetparte.github.io/tags/</loc>
+    <lastmod>2020-04-21T20:21:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeetparte.github.io/posts/need-for-digital-literacy/</loc>
+    <lastmod>2020-04-21T20:21:00+05:30</lastmod>
   </url>
   
   <url>
@@ -19,11 +29,6 @@
   
   <url>
     <loc>https://jeetparte.github.io/posts/sicp-exercise-2.6-solved/</loc>
-    <lastmod>2020-03-25T21:00:50+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeetparte.github.io/tags/</loc>
     <lastmod>2020-03-25T21:00:50+05:30</lastmod>
   </url>
   
@@ -119,6 +124,11 @@
   
   <url>
     <loc>https://jeetparte.github.io/about/</loc>
+    <lastmod>2020-02-19T21:11:42+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeetparte.github.io/</loc>
     <lastmod>2020-02-19T21:11:42+05:30</lastmod>
   </url>
   
