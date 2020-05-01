@@ -5,28 +5,8 @@
 		<description>Recent content in Posts on sailing on lambdas ⛵️</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Tue, 21 Apr 2020 20:21:00 +0530</lastBuildDate>
+		<lastBuildDate>Wed, 25 Mar 2020 21:00:50 +0530</lastBuildDate>
 		<atom:link href="https://jeetparte.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>The Need for Digital Literacy</title>
-			<link>https://jeetparte.github.io/posts/need-for-digital-literacy/</link>
-			<pubDate>Tue, 21 Apr 2020 20:21:00 +0530</pubDate>
-			
-			<guid>https://jeetparte.github.io/posts/need-for-digital-literacy/</guid>
-			<description>These last few weeks, with the lockdown in place and having to work from home, I&amp;rsquo;m being utilized to the fullest by those in my social circle. When it comes to help with tech stuff that is :)
-While it is clear that these people, friends and family, are a little lacking in technical knowledge which we techies consider &amp;lsquo;basic&amp;rsquo;, I think there are some deeper issues that create such situations.</description>
-			<content type="html"><![CDATA[<p>These last few weeks, with the lockdown in place and having to work from home, I&rsquo;m being utilized to the fullest by those in my social circle. When it comes to help with tech stuff that is :)</p>
-<p>While it is clear that these people, friends and family, are a little lacking in technical knowledge which we techies consider &lsquo;basic&rsquo;, I think there are some deeper issues that create such situations.</p>
-<p>First is, the lack of bare minimum knowledge required so that one can build upon it independently. I think these people somehow jumped straight to their particular use case without mastering the basics of the computer / operating system / tool they use.</p>
-<p>Take for example, an old guy in his fifties, who uses professional music production software like <em>Logic Pro X</em> on macOS but doesn&rsquo;t know how the file system works. Every file he uses <em>must</em> be located on the desktop so its convenient for drag and drop into applications. If its under <em>Documents</em> or <em>Downloads</em>, he cannot use it. If he somehow finds his files there, he will make it a point to drag it to the desktop first. Strange ritual! Perhaps Finder windows are too intimidating to use files directly from. Or maybe that&rsquo;s not possible (that&rsquo;s what the person told me they believed). But the conclusion is that people under ignorance can form false beliefs around the limited things they know.</p>
-<p>Some education is certainly called for. That said I think the folks at Apple have done a pretty good job at making their OSs easy to learn and use. Shame these people skip over reading the provided user manuals etc. Really good starting point IMO.</p>
-<p>Second, sometimes software is designed in such ways that its not clear what exactly the problem is (or whose fault it is). Was the error caused by the software? Or was it the user&rsquo;s fault? What are the next steps to resolve the issues? These can be frustrating for normal users as it is. Even more cryptic to the digitally less-literate folks. They might end up with the conclusion that the workings of technology are unpredictable or unknowable (when in fact most software is never whimsical and works deterministically), and some expertise is needed to resolve their problems; that the task is beyond them and they need an expert to figure it out. That&rsquo;s unfortunate though, being dependent like that and giving up.</p>
-<p>Digital literacy matters because of the pervasiveness of technology. It tangibly impacts people&rsquo;s life and work. Not knowing how to backup your files (or its importance), can lead to lost data that might mean months of precious work. Not knowing the importance of good passwords might lead to a costly security breach. Knowing that you can use a password manager means you can save all lot of time and frustration resetting forgotten ones. Digital literacy is a fundamental skill just like basic mathematics and every individual must be well equipped with it.</p>
-<p>And while we can help the folks out, its better to teach them how to fish.<br>
-<strong>edit:</strong> The willing ones that is.</p>
-]]></content>
-		</item>
 		
 		<item>
 			<title>SICP Solutions - Exercise 2.6</title>
@@ -86,7 +66,7 @@ define (add-1 n) (lambda (f) (lambda (x) (f ((n f) x))))) Part 1 Question:
 <p>Give a direct definition of the addition procedure + (not in terms of repeated application of add-1).</p>
 </blockquote>
 <p><em>Answer:</em></p>
-<p>I leave this exercise to the reader. You can check your answer <a href="https://github.com/jeetparte/sicp/blob/master/chapter2/sicp2.6.rkt">here</a>.</p>
+<p>I leave this exercise to the reader. You can check your answer <a href="https://github.com/jeetparte/sicp/blob/master/chapter2/sicp2.06.rkt">here</a>.</p>
 ]]></content>
 		</item>
 		
