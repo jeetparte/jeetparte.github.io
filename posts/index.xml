@@ -15,10 +15,10 @@
 			
 			<guid>https://jeetparte.github.io/posts/sicp-picture-language/</guid>
 			<description>So this week, I came across the picture language section in SICP and had some fun painting with it.
-In the book, the authors suppose the availability of the draw-line procedure and use it to implement segments-&amp;gt;painter. Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities (or write our own).
+In the book, the authors suppose the availability of the draw-line procedure and use it to implement segments-&amp;gt;painter. Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities (or write one of our own).
 With some searching, I found two options, both available inside Racket:</description>
 			<content type="html"><![CDATA[<p>So this week, I came across the picture language section in <a href="https://g.co/kgs/GPVfya">SICP</a> and had some fun painting with it.</p>
-<p>In the book, the authors suppose the availability of the <code>draw-line</code> procedure and use it to implement <code>segments-&gt;painter</code>. <strong>Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities</strong> (or write our own).</p>
+<p>In the book, the authors suppose the availability of the <code>draw-line</code> procedure and use it to implement <code>segments-&gt;painter</code>. <strong>Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities</strong> (or write one of our own).</p>
 <p>With some searching, I found two options, both available inside Racket:</p>
 <ol>
 <li><strong>Use the <a href="https://docs.racket-lang.org/sicp-manual/SICP_Picture_Language.html">SICP picture language</a>:</strong></li>
@@ -29,7 +29,7 @@ With some searching, I found two options, both available inside Racket:</descrip
 <li><strong>Use Racket&rsquo;s <a href="https://docs.racket-lang.org/graphics/index.html">legacy graphics library</a>:</strong></li>
 </ol>
 <p>This old library provides the much needed <a href="https://docs.racket-lang.org/graphics/Draw__Clear__and_Flip_Operations.html#%28def._%28%28lib._graphics%2Fgraphics..rkt%29._draw-line%29%29"><code>draw-line</code></a> procedure which draws within a viewport. With it, we can draw arbitrarily shaped frames, just like in the book.</p>
-<p>I found it through Eric Scrivner&rsquo;s blog post <a href="https://ericscrivner.me/2015/05/the-sicp-picture-language-in-racket/">here</a>.</p>
+<p>I found it through <a href="https://ericscrivner.me/2015/05/the-sicp-picture-language-in-racket/">Eric Scrivner&rsquo;s blog post</a>.</p>
 <p>Here is the essential part (tailored a bit):</p>
 <pre><code>; Graphics (provides the drawing capabilities)
 (require graphics/graphics)
@@ -71,7 +71,7 @@ With some searching, I found two options, both available inside Racket:</descrip
 </code></pre><p>So I went ahead and completed exercise 2.49 from the book, with a twist!</p>
 <p>Here&rsquo;s what I created:</p>
 <p><img src="/img/sicp-drawing-the-wave-painter-figure.png" alt="Drawing the wave painter figure"></p>
-<p><em>The wave painter figure (with a tattoo on it&rsquo;s arm!)</em></p>
+<p><em>The wave painter figure from the book (with a tattoo on it&rsquo;s arm!)</em></p>
 <p>I measured the points on the original image in macOS&rsquo; <em>Preview</em> app. After adjusting the location for the tattoo&rsquo;s frame, I created a <code>tattoo-painter</code> to draw it:</p>
 <pre><code>(define tattoo-painter
   (lambda (frame)

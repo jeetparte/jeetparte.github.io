@@ -18,7 +18,7 @@
       
       <guid>https://jeetparte.github.io/posts/sicp-picture-language/</guid>
       <description>So this week, I came across the picture language section in SICP and had some fun painting with it.
-In the book, the authors suppose the availability of the draw-line procedure and use it to implement segments-&amp;gt;painter. Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities (or write our own).
+In the book, the authors suppose the availability of the draw-line procedure and use it to implement segments-&amp;gt;painter. Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities (or write one of our own).
 With some searching, I found two options, both available inside Racket:</description>
     </item>
     
