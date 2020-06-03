@@ -5,8 +5,84 @@
 		<description>Recent content in Posts on sailing on lambdas ⛵️</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Wed, 25 Mar 2020 21:00:50 +0530</lastBuildDate>
+		<lastBuildDate>Wed, 03 Jun 2020 19:22:07 +0530</lastBuildDate>
 		<atom:link href="https://jeetparte.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>SICP: Fun with the Picture Language</title>
+			<link>https://jeetparte.github.io/posts/sicp-picture-language/</link>
+			<pubDate>Wed, 03 Jun 2020 19:22:07 +0530</pubDate>
+			
+			<guid>https://jeetparte.github.io/posts/sicp-picture-language/</guid>
+			<description>So this week, I came across the picture language section in SICP and had some fun painting with it.
+In the book, the authors suppose the availability of the draw-line procedure and use it to implement segments-&amp;gt;painter. Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities (or write our own).
+With some searching, I found two options, both available inside Racket:</description>
+			<content type="html"><![CDATA[<p>So this week, I came across the picture language section in <a href="https://g.co/kgs/GPVfya">SICP</a> and had some fun painting with it.</p>
+<p>In the book, the authors suppose the availability of the <code>draw-line</code> procedure and use it to implement <code>segments-&gt;painter</code>. <strong>Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities</strong> (or write our own).</p>
+<p>With some searching, I found two options, both available inside Racket:</p>
+<ol>
+<li><strong>Use the <a href="https://docs.racket-lang.org/sicp-manual/SICP_Picture_Language.html">SICP picture language</a>:</strong></li>
+</ol>
+<p>The picture language library does not expose any <code>draw-line</code> primitive but rather provides painters that are capable of drawing.</p>
+<p>The drawback for me was that these painters cannot accept frames as arguments and instead must be called with a special <a href="https://docs.racket-lang.org/sicp-manual/SICP_Picture_Language.html#%28part._.Painting%29">paint</a> procedure which can only draw rectangular frames.</p>
+<ol start="2">
+<li><strong>Use Racket&rsquo;s <a href="https://docs.racket-lang.org/graphics/index.html">legacy graphics library</a>:</strong></li>
+</ol>
+<p>This old library provides the much needed <a href="https://docs.racket-lang.org/graphics/Draw__Clear__and_Flip_Operations.html#%28def._%28%28lib._graphics%2Fgraphics..rkt%29._draw-line%29%29"><code>draw-line</code></a> procedure which draws within a viewport. With it, we can draw arbitrarily shaped frames, just like in the book.</p>
+<p>I found it through Eric Scrivner&rsquo;s blog post <a href="https://ericscrivner.me/2015/05/the-sicp-picture-language-in-racket/">here</a>.</p>
+<p>Here is the essential part (tailored a bit):</p>
+<pre><code>; Graphics (provides the drawing capabilities)
+(require graphics/graphics)
+(open-graphics)
+(define width 500)
+(define height 500)
+(define vp (open-viewport &quot;Picture Language Canvas&quot; width height))
+
+(define draw (draw-viewport vp))
+(define (clear) ((clear-viewport vp)))
+(define line (draw-line vp))
+</code></pre><p>Scan through the original post to see the rest of the code. In it, you might notice some odd coordinates used to create frames:</p>
+<pre><code>(define unit-frame (make-frame (make-vect 0 500) (make-vect 500 0) (make-vect 0 -500)))
+</code></pre><p>This is because in the graphics library, the viewport&rsquo;s origin (0, 0) is at the upper-left corner, and positions increase to the right and down. We can avoid having to specify in terms of the graphic library&rsquo;s semantics, by creating a function that converts regular y-coordinates to those that make sense for the library:</p>
+<pre><code>(define (normalize y-coord)
+  (- height y-coord))
+</code></pre><p>If we isolate our calls to the graphics library within the painters, we can use regular semantics everywhere else:</p>
+<pre><code>(define (segments-&gt;painter segment-list)
+  (lambda (frame)
+    (for-each
+     (lambda (segment)
+       (let ((start-coord ((frame-coord-map frame) (start-segment segment)))
+             (end-coord ((frame-coord-map frame) (end-segment segment))))
+         (line
+          (make-posn (xcor-vect start-coord) (normalize (ycor-vect start-coord))) ; convert y-coords here
+          (make-posn (xcor-vect end-coord) (normalize (ycor-vect end-coord))))))
+     segment-list)))
+
+(define unit-frame (make-frame (make-vect 0 0) (make-vect 500 0) (make-vect 0 500))) ; defined with normal semantics
+</code></pre><p>With all this in place, you can draw by creating any painter from <code>segments-&gt;painter</code> and passing it a frame:</p>
+<pre><code>(define x-painter
+  (segments-&gt;painter
+   (list (make-segment (make-vect 0 0)
+                       (make-vect 1 1))
+         (make-segment (make-vect 0 1)
+                       (make-vect 1 0)))))
+
+(x-painter some-frame) ; draws to the viewport                  
+</code></pre><p>So I went ahead and completed exercise 2.49 from the book, with a twist!</p>
+<p>Here&rsquo;s what I created:</p>
+<p><img src="/img/sicp-drawing-the-wave-painter-figure.png" alt="Drawing the wave painter figure"></p>
+<p><em>The wave painter figure (with a tattoo on it&rsquo;s arm!)</em></p>
+<p>I measured the points on the original image in macOS&rsquo; <em>Preview</em> app. After adjusting the location for the tattoo&rsquo;s frame, I created a <code>tattoo-painter</code> to draw it:</p>
+<pre><code>(define tattoo-painter
+  (lambda (frame)
+    (x-painter frame)
+    (diamond-painter frame)))
+
+(tattoo-painter tattoo-frame)
+</code></pre><p>You can see my full code <a href="https://gist.github.com/jeetparte/ae493585feaf33087977da96c4b0f5fc">here</a>.</p>
+<p>I had great fun doing this section. I hope you enjoy it too!</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>SICP Solutions - Exercise 2.6</title>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="SICP: Fun with the Picture Language">
+<meta itemprop="description" content="So this week, I came across the picture language section in SICP and had some fun painting with it.
+In the book, the authors suppose the availability of the draw-line procedure and use it to implement segments-&gt;painter. Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities (or write our own).
+With some searching, I found two options, both available inside Racket:">
+<meta itemprop="datePublished" content="2020-06-03T19:22:07&#43;05:30" />
+<meta itemprop="dateModified" content="2020-06-03T19:22:07&#43;05:30" />
+<meta itemprop="wordCount" content="505">
+
+
+
+<meta itemprop="keywords" content="sicp,picture language," /><meta property="og:title" content="SICP: Fun with the Picture Language" />
+<meta property="og:description" content="So this week, I came across the picture language section in SICP and had some fun painting with it.
+In the book, the authors suppose the availability of the draw-line procedure and use it to implement segments-&gt;painter. Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities (or write our own).
+With some searching, I found two options, both available inside Racket:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jeetparte.github.io/posts/sicp-picture-language/" />
+<meta property="article:published_time" content="2020-06-03T19:22:07+05:30" />
+<meta property="article:modified_time" content="2020-06-03T19:22:07+05:30" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SICP: Fun with the Picture Language"/>
+<meta name="twitter:description" content="So this week, I came across the picture language section in SICP and had some fun painting with it.
+In the book, the authors suppose the availability of the draw-line procedure and use it to implement segments-&gt;painter. Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities (or write our own).
+With some searching, I found two options, both available inside Racket:"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>SICP: Fun with the Picture Language</title>
+	<link rel="stylesheet" href="https://jeetparte.github.io/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://jeetparte.github.io/">sailing on lambdas ⛵️</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://jeetparte.github.io/posts/">Posts</a>
+				<a href="https://jeetparte.github.io/about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/jeetparte1" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://www.instagram.com/jeetparte2021/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/jeetparte" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="mailto:jeetparte@gmail.com" target="_blank" rel="noopener me" title="Email"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://jeetparte.github.io/posts/">Posts</a></li>
+			<li><a href="https://jeetparte.github.io/about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Jun 3, 2020</span></div>
+				<h1>SICP: Fun with the Picture Language</h1>
+			</header>
+			<div class="content">
+				<p>So this week, I came across the picture language section in <a href="https://g.co/kgs/GPVfya">SICP</a> and had some fun painting with it.</p>
+<p>In the book, the authors suppose the availability of the <code>draw-line</code> procedure and use it to implement <code>segments-&gt;painter</code>. <strong>Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities</strong> (or write our own).</p>
+<p>With some searching, I found two options, both available inside Racket:</p>
+<ol>
+<li><strong>Use the <a href="https://docs.racket-lang.org/sicp-manual/SICP_Picture_Language.html">SICP picture language</a>:</strong></li>
+</ol>
+<p>The picture language library does not expose any <code>draw-line</code> primitive but rather provides painters that are capable of drawing.</p>
+<p>The drawback for me was that these painters cannot accept frames as arguments and instead must be called with a special <a href="https://docs.racket-lang.org/sicp-manual/SICP_Picture_Language.html#%28part._.Painting%29">paint</a> procedure which can only draw rectangular frames.</p>
+<ol start="2">
+<li><strong>Use Racket&rsquo;s <a href="https://docs.racket-lang.org/graphics/index.html">legacy graphics library</a>:</strong></li>
+</ol>
+<p>This old library provides the much needed <a href="https://docs.racket-lang.org/graphics/Draw__Clear__and_Flip_Operations.html#%28def._%28%28lib._graphics%2Fgraphics..rkt%29._draw-line%29%29"><code>draw-line</code></a> procedure which draws within a viewport. With it, we can draw arbitrarily shaped frames, just like in the book.</p>
+<p>I found it through Eric Scrivner&rsquo;s blog post <a href="https://ericscrivner.me/2015/05/the-sicp-picture-language-in-racket/">here</a>.</p>
+<p>Here is the essential part (tailored a bit):</p>
+<pre><code>; Graphics (provides the drawing capabilities)
+(require graphics/graphics)
+(open-graphics)
+(define width 500)
+(define height 500)
+(define vp (open-viewport &quot;Picture Language Canvas&quot; width height))
+
+(define draw (draw-viewport vp))
+(define (clear) ((clear-viewport vp)))
+(define line (draw-line vp))
+</code></pre><p>Scan through the original post to see the rest of the code. In it, you might notice some odd coordinates used to create frames:</p>
+<pre><code>(define unit-frame (make-frame (make-vect 0 500) (make-vect 500 0) (make-vect 0 -500)))
+</code></pre><p>This is because in the graphics library, the viewport&rsquo;s origin (0, 0) is at the upper-left corner, and positions increase to the right and down. We can avoid having to specify in terms of the graphic library&rsquo;s semantics, by creating a function that converts regular y-coordinates to those that make sense for the library:</p>
+<pre><code>(define (normalize y-coord)
+  (- height y-coord))
+</code></pre><p>If we isolate our calls to the graphics library within the painters, we can use regular semantics everywhere else:</p>
+<pre><code>(define (segments-&gt;painter segment-list)
+  (lambda (frame)
+    (for-each
+     (lambda (segment)
+       (let ((start-coord ((frame-coord-map frame) (start-segment segment)))
+             (end-coord ((frame-coord-map frame) (end-segment segment))))
+         (line
+          (make-posn (xcor-vect start-coord) (normalize (ycor-vect start-coord))) ; convert y-coords here
+          (make-posn (xcor-vect end-coord) (normalize (ycor-vect end-coord))))))
+     segment-list)))
+
+(define unit-frame (make-frame (make-vect 0 0) (make-vect 500 0) (make-vect 0 500))) ; defined with normal semantics
+</code></pre><p>With all this in place, you can draw by creating any painter from <code>segments-&gt;painter</code> and passing it a frame:</p>
+<pre><code>(define x-painter
+  (segments-&gt;painter
+   (list (make-segment (make-vect 0 0)
+                       (make-vect 1 1))
+         (make-segment (make-vect 0 1)
+                       (make-vect 1 0)))))
+
+(x-painter some-frame) ; draws to the viewport                  
+</code></pre><p>So I went ahead and completed exercise 2.49 from the book, with a twist!</p>
+<p>Here&rsquo;s what I created:</p>
+<p><img src="/img/sicp-drawing-the-wave-painter-figure.png" alt="Drawing the wave painter figure"></p>
+<p><em>The wave painter figure (with a tattoo on it&rsquo;s arm!)</em></p>
+<p>I measured the points on the original image in macOS&rsquo; <em>Preview</em> app. After adjusting the location for the tattoo&rsquo;s frame, I created a <code>tattoo-painter</code> to draw it:</p>
+<pre><code>(define tattoo-painter
+  (lambda (frame)
+    (x-painter frame)
+    (diamond-painter frame)))
+
+(tattoo-painter tattoo-frame)
+</code></pre><p>You can see my full code <a href="https://gist.github.com/jeetparte/ae493585feaf33087977da96c4b0f5fc">here</a>.</p>
+<p>I had great fun doing this section. I hope you enjoy it too!</p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://jeetparte.github.io/tags/sicp">sicp</a></span><span class="tag"><a href="https://jeetparte.github.io/tags/picture-language">picture language</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>505 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-06-03 19:22 &#43;0530</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://jeetparte.github.io/posts/sicp-exercise-2.6-solved/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>SICP Solutions - Exercise 2.6</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://jeetparte.github.io/">Jeet Parte</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://jeetparte.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://jeetparte.github.io/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

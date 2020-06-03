@@ -6,15 +6,24 @@
     <description>Recent content in Tags on sailing on lambdas ⛵️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2020 21:00:50 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 19:22:07 +0530</lastBuildDate>
     
 	<atom:link href="https://jeetparte.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>picture language</title>
+      <link>https://jeetparte.github.io/tags/picture-language/</link>
+      <pubDate>Wed, 03 Jun 2020 19:22:07 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/tags/picture-language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>sicp</title>
       <link>https://jeetparte.github.io/tags/sicp/</link>
-      <pubDate>Wed, 25 Mar 2020 21:00:50 +0530</pubDate>
+      <pubDate>Wed, 03 Jun 2020 19:22:07 +0530</pubDate>
       
       <guid>https://jeetparte.github.io/tags/sicp/</guid>
       <description></description>
@@ -89,15 +98,6 @@
       <pubDate>Sat, 29 Feb 2020 22:38:55 +0530</pubDate>
       
       <guid>https://jeetparte.github.io/tags/.net/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>best practices</title>
-      <link>https://jeetparte.github.io/tags/best-practices/</link>
-      <pubDate>Sat, 29 Feb 2020 22:38:55 +0530</pubDate>
-      
-      <guid>https://jeetparte.github.io/tags/best-practices/</guid>
       <description></description>
     </item>
     
