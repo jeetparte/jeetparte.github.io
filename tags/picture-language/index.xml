@@ -6,10 +6,33 @@
     <description>Recent content in picture language on sailing on lambdas ⛵️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jun 2020 19:22:07 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 21:29:44 +0530</lastBuildDate>
     
 	<atom:link href="https://jeetparte.github.io/tags/picture-language/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SICP: Centering Frames (Picture Language Bonus Exercise)</title>
+      <link>https://jeetparte.github.io/posts/sicp-picture-language-bonus/</link>
+      <pubDate>Sat, 27 Jun 2020 21:29:44 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/posts/sicp-picture-language-bonus/</guid>
+      <description>As an addition to my other picture language posts, this post shows you how to center arbitrary frames in the viewport (or actually, w.r.t. any other arbitrary frame).
+Before I did this, my drawings sat inconveniently in the viewport window, uncentered:
+Let us fix that.
+In order to center a frame, all we need to do is place it in the right position, i.e. we simply need to manipulate it&amp;rsquo;s origin vector.</description>
+    </item>
+    
+    <item>
+      <title>SICP: Picture Language Exhibition</title>
+      <link>https://jeetparte.github.io/posts/sicp-picture-language-exhibition/</link>
+      <pubDate>Fri, 26 Jun 2020 20:40:24 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/posts/sicp-picture-language-exhibition/</guid>
+      <description>The picture language framework in SICP provides capabilities to create visually satisfying creative pictures, all built on top of a very simple concept - drawing a line between two points.
+Spending some time with it, I came across some interesting patterns and I&amp;rsquo;m pleased to welcome you to the picture language grand exhibit.
+ENTRY Exhibit 1 - Solos square-limit-with-outline-painter Notes: This picture helps clearly understand the &amp;lsquo;square limit&amp;rsquo; pattern described in the book.</description>
+    </item>
     
     <item>
       <title>SICP: Fun with the Picture Language</title>

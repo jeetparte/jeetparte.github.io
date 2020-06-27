@@ -18,7 +18,7 @@
 Before I did this, my drawings sat inconveniently in the viewport window, uncentered:
 Let us fix that.
 In order to center a frame, all we need to do is place it in the right position, i.e. we simply need to manipulate it&amp;rsquo;s origin vector.</description>
-			<content type="html"><![CDATA[<p>As an addition to my other picture language posts, this post shows you how to center arbitrary frames in the viewport (or actually, w.r.t. any other arbitrary frame).</p>
+			<content type="html"><![CDATA[<p>As an addition to my other <a href="https://jeetparte.github.io/tags/picture-language/">picture language posts</a>, this post shows you how to center arbitrary frames in the viewport (or actually, w.r.t. any other arbitrary frame).</p>
 <p>Before I did this, my drawings sat inconveniently in the viewport window, uncentered:</p>
 <p><img src="/img/sicp/square-limit-7-full.png" alt="square-limit-7-full"></p>
 <p>Let us fix that.</p>
