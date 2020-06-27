@@ -16,14 +16,20 @@
 			<guid>https://jeetparte.github.io/posts/sicp-picture-language-bonus/</guid>
 			<description>As an addition to my other picture language posts, this post shows you how to center arbitrary frames in the viewport (or actually, w.r.t. any other arbitrary frame).
 Before I did this, my drawings sat inconveniently in the viewport window, uncentered:
-In order to center a frame, all we need to do is place it in the right position, i.e. we simply need to manipulate it&amp;rsquo;s origin vector. Since the picture language already provides the capabilities to talk in terms of vectors, we can formulate the computation quite easily:</description>
+Let us fix that.
+In order to center a frame, all we need to do is place it in the right position, i.e. we simply need to manipulate it&amp;rsquo;s origin vector.</description>
 			<content type="html"><![CDATA[<p>As an addition to my other picture language posts, this post shows you how to center arbitrary frames in the viewport (or actually, w.r.t. any other arbitrary frame).</p>
 <p>Before I did this, my drawings sat inconveniently in the viewport window, uncentered:</p>
 <p><img src="/img/sicp/square-limit-7-full.png" alt="square-limit-7-full"></p>
-<p><strong>In order to center a frame, all we need to do is place it in the right position, i.e. we simply need to manipulate it&rsquo;s origin vector</strong>. Since the picture language already provides the capabilities to <em>talk</em> in terms of vectors, we can formulate the computation quite easily:</p>
-<pre><code>; to center a frame w.r.t another, we calculate it's origin vector based on the relation
-; that when the centers of the frame and reference-frame align,
-; vector(reference-frame's center) = vector(origin) + relative_vector(frame's center)
+<p>Let us fix that.</p>
+<p><strong>In order to center a frame, all we need to do is place it in the right position, i.e. we simply need to manipulate it&rsquo;s origin vector</strong>. Here is the important relation:</p>
+<pre><code>When the centers of the frame and reference-frame align,
+vector(reference-frame's center) 
+= vector(origin) + relative_vector(frame's center)
+</code></pre>
+<p>Since the picture language already provides the capabilities to <em>talk</em> in terms of vectors, we can formulate the computation quite easily:</p>
+<pre><code>; to center a frame w.r.t another, we calculate it's origin
+; vector based on the above relation.
 (define (centered frame reference-frame)
   (define (relative-center frame)
     (add-vect (scale-vect 0.5 (edge1-frame frame))
@@ -39,7 +45,7 @@ In order to center a frame, all we need to do is place it in the right position,
 <p><img src="/img/sicp/arbitrary-frame-centered-in-viewport.png" alt="arbitrary-frame-centered-in-viewport">
 <strong>Above:</strong> An arbitrary frame centered w.r.t. the <em>viewport frame</em>.</p>
 <p><strong>P.S.</strong> It took me a while to discover the relation for arbitrary frames. Initially, I had only figured out how to center an arbitrary frame in a rectangular one. I struggled during the first attempt (trying to find a more generalisable solution). After a fews days&rsquo; gap, I sat down and the answer came almost immediately with almost no effort.</p>
-<p>This is what draws me to problem solving and software. The only limits are one&rsquo;s own mind. With one perspective, we can generalize entire classes of ideas. With another, we can elaborate a single idea unto eternity. All in all, there is an element of creativity involved in these endeavours that I feel can be used to brings us closer to understanding creation, ourselves and the Intelligence behind it all.</p>
+<p>This is what draws me to problem solving and to software. The only limits are one&rsquo;s own mind. With one perspective, we can generalize entire classes of ideas. With another, we can elaborate a single idea unto eternity. All in all, there is an element of creativity involved in these endeavours that I feel can be used to brings us closer to understanding creation, ourselves and the Intelligence behind it all.</p>
 ]]></content>
 		</item>
 		

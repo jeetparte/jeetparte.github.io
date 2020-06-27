@@ -19,7 +19,8 @@
       <guid>https://jeetparte.github.io/posts/sicp-picture-language-bonus/</guid>
       <description>As an addition to my other picture language posts, this post shows you how to center arbitrary frames in the viewport (or actually, w.r.t. any other arbitrary frame).
 Before I did this, my drawings sat inconveniently in the viewport window, uncentered:
-In order to center a frame, all we need to do is place it in the right position, i.e. we simply need to manipulate it&amp;rsquo;s origin vector. Since the picture language already provides the capabilities to talk in terms of vectors, we can formulate the computation quite easily:</description>
+Let us fix that.
+In order to center a frame, all we need to do is place it in the right position, i.e. we simply need to manipulate it&amp;rsquo;s origin vector.</description>
     </item>
     
     <item>
