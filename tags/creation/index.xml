@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>creation on sailing on lambdas ⛵️</title>
+    <link>https://jeetparte.github.io/tags/creation/</link>
+    <description>Recent content in creation on sailing on lambdas ⛵️</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Jun 2020 20:40:24 +0530</lastBuildDate>
+    
+	<atom:link href="https://jeetparte.github.io/tags/creation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SICP: Picture Language Exhibition</title>
+      <link>https://jeetparte.github.io/posts/sicp-picture-language-exhibition/</link>
+      <pubDate>Fri, 26 Jun 2020 20:40:24 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/posts/sicp-picture-language-exhibition/</guid>
+      <description>The picture language framework in SICP provides capabilities to create visually satisfying creative pictures, all built on top of a very simple concept - drawing a line between two points.
+Spending some time with it, I came across some interesting patterns and I&amp;rsquo;m pleased to welcome you to the picture language grand exhibit.
+ENTRY Exhibit 1 - Solos square-limit-with-outline-painter Notes: This picture helps clearly understand the square limit pattern.
+square-limit-with-x-painter Notes: Notice how the Xs blend into each other.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,37 @@
     <description>Recent content in Tags on sailing on lambdas ⛵️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jun 2020 19:22:07 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2020 20:40:24 +0530</lastBuildDate>
     
 	<atom:link href="https://jeetparte.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>art</title>
+      <link>https://jeetparte.github.io/tags/art/</link>
+      <pubDate>Fri, 26 Jun 2020 20:40:24 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/tags/art/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>creation</title>
+      <link>https://jeetparte.github.io/tags/creation/</link>
+      <pubDate>Fri, 26 Jun 2020 20:40:24 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/tags/creation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sicp</title>
+      <link>https://jeetparte.github.io/tags/sicp/</link>
+      <pubDate>Fri, 26 Jun 2020 20:40:24 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/tags/sicp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>picture language</title>
@@ -17,15 +44,6 @@
       <pubDate>Wed, 03 Jun 2020 19:22:07 +0530</pubDate>
       
       <guid>https://jeetparte.github.io/tags/picture-language/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sicp</title>
-      <link>https://jeetparte.github.io/tags/sicp/</link>
-      <pubDate>Wed, 03 Jun 2020 19:22:07 +0530</pubDate>
-      
-      <guid>https://jeetparte.github.io/tags/sicp/</guid>
       <description></description>
     </item>
     
@@ -80,24 +98,6 @@
       <pubDate>Thu, 05 Mar 2020 23:31:53 +0530</pubDate>
       
       <guid>https://jeetparte.github.io/tags/siri/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>touch typing</title>
-      <link>https://jeetparte.github.io/tags/touch-typing/</link>
-      <pubDate>Thu, 05 Mar 2020 23:31:53 +0530</pubDate>
-      
-      <guid>https://jeetparte.github.io/tags/touch-typing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>.NET</title>
-      <link>https://jeetparte.github.io/tags/.net/</link>
-      <pubDate>Sat, 29 Feb 2020 22:38:55 +0530</pubDate>
-      
-      <guid>https://jeetparte.github.io/tags/.net/</guid>
       <description></description>
     </item>
     

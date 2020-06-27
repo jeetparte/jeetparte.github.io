@@ -13,7 +13,7 @@ In the book, the authors suppose the availability of the draw-line procedure and
 With some searching, I found two options, both available inside Racket:">
 <meta itemprop="datePublished" content="2020-06-03T19:22:07&#43;05:30" />
 <meta itemprop="dateModified" content="2020-06-03T19:22:07&#43;05:30" />
-<meta itemprop="wordCount" content="509">
+<meta itemprop="wordCount" content="514">
 
 
 
@@ -95,18 +95,18 @@ With some searching, I found two options, both available inside Racket:"/>
 <pre><code>; Graphics (provides the drawing capabilities)
 (require graphics/graphics)
 (open-graphics)
-(define width 500)
-(define height 500)
-(define vp (open-viewport &quot;Picture Language Canvas&quot; width height))
+(define viewport-width 500)
+(define viewport-height 500)
+(define vp (open-viewport &quot;Picture Language Canvas&quot; viewport-width viewport-height))
 
 (define draw (draw-viewport vp))
 (define (clear) ((clear-viewport vp)))
 (define line (draw-line vp))
 </code></pre><p>Scan through the original post to see the rest of the code. In it, you might notice some odd coordinates used to create frames:</p>
 <pre><code>(define unit-frame (make-frame (make-vect 0 500) (make-vect 500 0) (make-vect 0 -500)))
-</code></pre><p>This is because in the graphics library, the viewport&rsquo;s origin (0, 0) is at the upper-left corner, and positions increase to the right and down. We can avoid having to specify in terms of the graphic library&rsquo;s semantics, by creating a function that converts regular y-coordinates to those that make sense for the library:</p>
+</code></pre><p>Notice the negative y-coordinate. It is there because in the graphics library, the viewport&rsquo;s origin (0, 0) is at the upper-left corner, and positions increase to the right and down. We can avoid having to specify in terms of the graphic library&rsquo;s semantics, by creating a function that converts regular y-coordinates to those that make sense for the library:</p>
 <pre><code>(define (normalize y-coord)
-  (- height y-coord))
+  (- viewport-height y-coord))
 </code></pre><p>If we isolate our calls to the graphics library within the painters, we can use regular semantics everywhere else:</p>
 <pre><code>(define (segments-&gt;painter segment-list)
   (lambda (frame)
@@ -131,7 +131,7 @@ With some searching, I found two options, both available inside Racket:"/>
 (x-painter some-frame) ; draws to the viewport                  
 </code></pre><p>So I went ahead and completed exercise 2.49 from the book, with a twist!</p>
 <p>Here&rsquo;s what I created:</p>
-<p><img src="/img/sicp-drawing-the-wave-painter-figure.png" alt="Drawing the wave painter figure"></p>
+<p><img src="/img/sicp/sicp-drawing-the-wave-painter-figure.png" alt="Drawing the wave painter figure"></p>
 <p><em>The wave painter figure from the book (with a tattoo on it&rsquo;s arm!)</em></p>
 <p>I measured the points on the original image in macOS&rsquo; <em>Preview</em> app. After adjusting the location for the tattoo&rsquo;s frame, I created a <code>tattoo-painter</code> to draw it:</p>
 <pre><code>(define tattoo-painter
@@ -149,11 +149,14 @@ With some searching, I found two options, both available inside Racket:"/>
 				<p>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://jeetparte.github.io/tags/sicp">sicp</a></span><span class="tag"><a href="https://jeetparte.github.io/tags/picture-language">picture language</a></span>
 				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>509 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>514 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-06-03 19:22 &#43;0530</p>
 			</footer>
 		</article>
 		<div class="post-nav thin">
+			<a class="next-post" href="https://jeetparte.github.io/posts/sicp-picture-language-exhibition/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>SICP: Picture Language Exhibition</span>
+			</a>
 			<a class="prev-post" href="https://jeetparte.github.io/posts/sicp-exercise-2.6-solved/">
 				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>SICP Solutions - Exercise 2.6</span>
 			</a>
