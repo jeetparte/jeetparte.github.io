@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jeetparte.github.io/posts/</loc>
+    <lastmod>2020-06-27T21:29:44+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeetparte.github.io/tags/sicp/</loc>
+    <lastmod>2020-06-27T21:29:44+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeetparte.github.io/posts/sicp-picture-language-bonus/</loc>
+    <lastmod>2020-06-27T21:29:44+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeetparte.github.io/tags/</loc>
+    <lastmod>2020-06-27T21:29:44+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jeetparte.github.io/tags/art/</loc>
     <lastmod>2020-06-26T20:40:24+05:30</lastmod>
   </url>
@@ -13,22 +33,7 @@
   </url>
   
   <url>
-    <loc>https://jeetparte.github.io/posts/</loc>
-    <lastmod>2020-06-26T20:40:24+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeetparte.github.io/tags/sicp/</loc>
-    <lastmod>2020-06-26T20:40:24+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jeetparte.github.io/posts/sicp-picture-language-exhibition/</loc>
-    <lastmod>2020-06-26T20:40:24+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeetparte.github.io/tags/</loc>
     <lastmod>2020-06-26T20:40:24+05:30</lastmod>
   </url>
   
