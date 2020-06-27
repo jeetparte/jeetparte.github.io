@@ -16,15 +16,14 @@
 			<guid>https://jeetparte.github.io/posts/sicp-picture-language-exhibition/</guid>
 			<description>The picture language framework in SICP provides capabilities to create visually satisfying creative pictures, all built on top of a very simple concept - drawing a line between two points.
 Spending some time with it, I came across some interesting patterns and I&amp;rsquo;m pleased to welcome you to the picture language grand exhibit.
-ENTRY Exhibit 1 - Solos square-limit-with-outline-painter Notes: This picture helps clearly understand the square limit pattern.
-square-limit-with-x-painter Notes: Notice how the Xs blend into each other.</description>
+ENTRY Exhibit 1 - Solos square-limit-with-outline-painter Notes: This picture helps clearly understand the &amp;lsquo;square limit&amp;rsquo; pattern described in the book.</description>
 			<content type="html"><![CDATA[<p>The picture language framework in <a href="https://g.co/kgs/GPVfya">SICP</a> provides capabilities to create visually satisfying creative pictures, all built on top of a very simple concept - drawing a line between two points.</p>
 <p>Spending some time with it, I came across some interesting patterns and I&rsquo;m pleased to welcome you to the picture language grand exhibit.</p>
 <h3 id="entry">ENTRY</h3>
 <h2 id="exhibit-1---solos">Exhibit 1 - Solos</h2>
 <h3 id="_square-limit-with-outline-painter_"><em>square-limit-with-outline-painter</em></h3>
 <p><img src="/img/sicp/square-limit-with-outline-painter.png" alt="square-limit-with-outline-painter">
-<strong>Notes:</strong> This picture helps clearly understand the <a href="https://www.wikiart.org/en/m-c-escher/square-limit">square limit pattern</a>.</p>
+<strong>Notes:</strong> This picture helps clearly understand the &lsquo;square limit&rsquo; pattern described in the book. Compare with M.C. Escher&rsquo;s &ldquo;<a href="https://www.wikiart.org/en/m-c-escher/square-limit">Square Limit</a>&rdquo; woodcut which was the inspiration.</p>
 <h3 id="_square-limit-with-x-painter_"><em>square-limit-with-x-painter</em></h3>
 <p><img src="/img/sicp/square-limit-with-x-painter.png" alt="square-limit-with-x-painter">
 <strong>Notes:</strong> Notice how the Xs blend into each other. There is the big X over the entire picture. In the center are many tilted squares. They can be also seen as diamonds. From each side, we see jutting mountain shapes that grow bigger as they approach the center.</p>
