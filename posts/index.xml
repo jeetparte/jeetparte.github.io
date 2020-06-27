@@ -60,12 +60,13 @@ square-limit-with-x-painter Notes: Notice how the Xs blend into each other.</des
 <p><img src="/img/sicp/outline+diamond+x-painter.png" alt="outline+diamond+x-painter">
 <strong>Notes:</strong> Quite an intricate pattern. Has a gothic appearance?</p>
 <h3 id="exhibit-3---the-centerpiece-oscillations-around-a-center">Exhibit 3 - The Centerpiece: &lsquo;Oscillations around a center&rsquo;</h3>
-<p><img src="/img/sicp/center-drawing.png" alt="center-drawing &lsquo;oscillations around a center&rsquo;">
+<p><img src="/img/sicp/centerpiece.png" alt="centerpiece &lsquo;oscillations around a center&rsquo;">
 <strong>Notes:</strong>
 This image was created by drawing mirrored images with frames centered. For all these images, I wrote some code that would center an arbitrary frame inside another.</p>
 <p>Here, a square frame is outlined and centred within the &lsquo;viewport frame&rsquo;. Mirrored pairs of larger and smaller frames are centred with respect to this square frame - the pair of larger frames is outlined, the other contains square limit images of the wave painter.</p>
 <p><em><strong>Whence multiple dimensions emerge and dissolve, what is at that grand center?</strong></em></p>
 <h3 id="exit">EXIT</h3>
+<p>Find accompanying code <a href="https://gist.github.com/jeetparte/0a7a2fd057b05915bc4c5435a3a2490e">here</a>.</p>
 ]]></content>
 		</item>
 		
@@ -75,10 +76,10 @@ This image was created by drawing mirrored images with frames centered. For all 
 			<pubDate>Wed, 03 Jun 2020 19:22:07 +0530</pubDate>
 			
 			<guid>https://jeetparte.github.io/posts/sicp-picture-language/</guid>
-			<description>So this week, I came across the picture language section in SICP and had some fun painting with it.
+			<description>So this week, I came across the picture language section in SICP and had some fun drawing with it.
 In the book, the authors suppose the availability of the draw-line procedure and use it to implement segments-&amp;gt;painter. Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities (or write one of our own).
 With some searching, I found two options, both available inside Racket:</description>
-			<content type="html"><![CDATA[<p>So this week, I came across the picture language section in <a href="https://g.co/kgs/GPVfya">SICP</a> and had some fun painting with it.</p>
+			<content type="html"><![CDATA[<p>So this week, I came across the picture language section in <a href="https://g.co/kgs/GPVfya">SICP</a> and had some fun drawing with it.</p>
 <p>In the book, the authors suppose the availability of the <code>draw-line</code> procedure and use it to implement <code>segments-&gt;painter</code>. <strong>Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities</strong> (or write one of our own).</p>
 <p>With some searching, I found two options, both available inside Racket:</p>
 <ol>
