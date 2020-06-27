@@ -95,14 +95,14 @@ ENTRY Exhibit 1 - Solos square-limit-with-outline-painter Notes: This picture he
 <strong>Notes:</strong> Another balanced combination of the two aspects.</p>
 <h3 id="combination-iv---diamondx-painter">Combination IV - diamond+x-painter</h3>
 <p><img src="/img/sicp/diamond+x-painter.png" alt="diamond+x-painter">
-<strong>Notes:</strong> There are as many daimonds as there are Xs. The shapes grow smaller and more numerous as we look outward.</p>
+<strong>Notes:</strong> There are as many diamonds as there are Xs. The shapes grow smaller and more numerous as we look outward.</p>
 <h3 id="combination-v---outlinediamondx-painter">Combination V - outline+diamond+x-painter</h3>
 <p><img src="/img/sicp/outline+diamond+x-painter.png" alt="outline+diamond+x-painter">
 <strong>Notes:</strong> Quite an intricate pattern. Has a gothic appearance?</p>
 <h3 id="exhibit-3---the-centerpiece-oscillations-around-a-center">Exhibit 3 - The Centerpiece: &lsquo;Oscillations around a center&rsquo;</h3>
 <p><img src="/img/sicp/centerpiece.png" alt="centerpiece &lsquo;oscillations around a center&rsquo;">
 <strong>Notes:</strong>
-This image was created by drawing mirrored images with frames centered. For all these images, I wrote some code that would center an arbitrary frame inside another.</p>
+This image was created by drawing mirrored images with <a href="/posts/sicp-picture-language-bonus/">frames centered</a>.</p>
 <p>Here, a square frame is outlined and centred within the &lsquo;viewport frame&rsquo;. Mirrored pairs of larger and smaller frames are centred with respect to this square frame - the pair of larger frames is outlined, the other contains square limit images of the wave painter.</p>
 <p><em><strong>Whence multiple dimensions emerge and dissolve, what is at that grand center?</strong></em></p>
 <h3 id="exit">EXIT</h3>
@@ -123,7 +123,7 @@ With some searching, I found two options, both available inside Racket:</descrip
 <p>In the book, the authors suppose the availability of the <code>draw-line</code> procedure and use it to implement <code>segments-&gt;painter</code>. <strong>Before we can draw anything, we need to find a graphics library which provides the required drawing capabilities</strong> (or write one of our own).</p>
 <p>With some searching, I found two options, both available inside Racket:</p>
 <ol>
-<li><strong>Use the <a href="https://docs.racket-lang.org/sicp-manual/SICP_Picture_Language.html">SICP picture language</a>:</strong></li>
+<li><strong>Use the <a href="https://docs.racket-lang.org/sicp-manual/SICP_Picture_Language.html">SICP picture language library</a>:</strong></li>
 </ol>
 <p>The picture language library does not expose any <code>draw-line</code> primitive but rather provides painters that are capable of drawing.</p>
 <p>The drawback for me was that these painters cannot accept frames as arguments and instead must be called with a special <a href="https://docs.racket-lang.org/sicp-manual/SICP_Picture_Language.html#%28part._.Painting%29">paint</a> procedure which can only draw rectangular frames.</p>
