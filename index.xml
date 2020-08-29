@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Waiting for my book</title>
+      <link>https://jeetparte.github.io/posts/waiting-for-my-book/</link>
+      <pubDate>Sat, 29 Aug 2020 10:14:29 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/posts/waiting-for-my-book/</guid>
+      <description>Here&amp;rsquo;s a random post to give expression to my impatience. I&amp;rsquo;m waiting for the book I ordered to get started with mobile development so I can finally turn those brilliant ideas into tangible, useful and shareable stuffs.
+Waiting&amp;hellip;aargh!.</description>
+    </item>
+    
+    <item>
       <title>SICP: Centering Frames (Picture Language Bonus Exercise)</title>
       <link>https://jeetparte.github.io/posts/sicp-picture-language-bonus/</link>
       <pubDate>Sat, 27 Jun 2020 21:29:44 +0530</pubDate>
@@ -109,15 +119,6 @@ Here&amp;rsquo;s what I&amp;rsquo;m working on -
       <guid>https://jeetparte.github.io/about/</guid>
       <description>This blog was created as a medium for exploring the world of code from a creative perspective. &amp;ldquo;Creative&amp;rdquo; here refers to original ideas and new endeavours.
 Most content here will relate in some way to software development and code. However, since nothing exists in a bubble, I like to think that the most valuable ideas in computing will be those that take into account its interconnectedness with the larger world. Conceived with that in mind, you will find that as a whole, the explorations in this blog are holistic and seek to encompass a larger range of topics.</description>
-    </item>
-    
-    <item>
-      <title>First Blog Post</title>
-      <link>https://jeetparte.github.io/posts/first-post/</link>
-      <pubDate>Sat, 15 Feb 2020 23:51:21 +0530</pubDate>
-      
-      <guid>https://jeetparte.github.io/posts/first-post/</guid>
-      <description>A new blog is born. Readers, you are welcome!</description>
     </item>
     
   </channel>
