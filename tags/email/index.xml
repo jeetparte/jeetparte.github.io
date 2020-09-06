@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>macOS on sailing on lambdas ⛵️</title>
-    <link>https://jeetparte.github.io/tags/macos/</link>
-    <description>Recent content in macOS on sailing on lambdas ⛵️</description>
+    <title>email on sailing on lambdas ⛵️</title>
+    <link>https://jeetparte.github.io/tags/email/</link>
+    <description>Recent content in email on sailing on lambdas ⛵️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Sep 2020 17:09:20 +0530</lastBuildDate>
     
-	<atom:link href="https://jeetparte.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jeetparte.github.io/tags/email/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,16 +20,6 @@
       <description>If you&amp;rsquo;re on a spam mailing list and the unsuscribe option in Mail hasn&amp;rsquo;t worked, here are some alternate ways of putting them in the right place (out of your mailbox):
 1. Use rules to automate spam identification and deletion If you find yourself manually identifying spam mail and then deleting it, creating a Rule can help automate that for you.
 Here&amp;rsquo;s an example of a rule I use to delete spam mail before I even see them:</description>
-    </item>
-    
-    <item>
-      <title>Siri Touch Typing Easter Egg in macOS</title>
-      <link>https://jeetparte.github.io/posts/siri-touch-typing-easter-egg/</link>
-      <pubDate>Thu, 05 Mar 2020 23:31:53 +0530</pubDate>
-      
-      <guid>https://jeetparte.github.io/posts/siri-touch-typing-easter-egg/</guid>
-      <description>If you type the home row keys of the QWERTY layout into macOS&amp;rsquo; Spotlight Search twice, Siri understands that you are touch typing.
-Steps to reproduce  Make sure you&amp;rsquo;re connected to the Internet. Type asdfjkl;asdfjkl; into Spotlight Search.  </description>
     </item>
     
   </channel>

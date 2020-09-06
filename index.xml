@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>macOS: How to Filter Spam Mails and Block Senders</title>
+      <link>https://jeetparte.github.io/posts/how-to-filter-spam-mails-senders-macos/</link>
+      <pubDate>Sun, 06 Sep 2020 17:09:20 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/posts/how-to-filter-spam-mails-senders-macos/</guid>
+      <description>If you&amp;rsquo;re on a spam mailing list and the unsuscribe option in Mail hasn&amp;rsquo;t worked, here are some alternate ways of putting them in the right place (out of your mailbox):
+1. Use rules to automate spam identification and deletion If you find yourself manually identifying spam mail and then deleting it, creating a Rule can help automate that for you.
+Here&amp;rsquo;s an example of a rule I use to delete spam mail before I even see them:</description>
+    </item>
+    
+    <item>
       <title>Waiting for my book order</title>
       <link>https://jeetparte.github.io/posts/waiting-for-my-book-order/</link>
       <pubDate>Sat, 29 Aug 2020 10:14:29 +0530</pubDate>
@@ -109,16 +120,6 @@ public ArgumentException (string message, string paramName);  the one provided b
       <description>A quick update about this site - I&amp;rsquo;m in the middle of setting it up so that it&amp;rsquo;s just as I&amp;rsquo;d want (or failing that, till all the essentials are met).
 Here&amp;rsquo;s what I&amp;rsquo;m working on -
  On the technical side, I need to get this site deployed. (It wasn&amp;rsquo;t when I wrote this!). I&amp;rsquo;m using Hugo - the static site generator. Also, need to enable comments so that we can talk to each other :P Importantly, I want this site to be organized so that it&amp;rsquo;s easy to navigate and view related content.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://jeetparte.github.io/about/</link>
-      <pubDate>Wed, 19 Feb 2020 21:11:42 +0530</pubDate>
-      
-      <guid>https://jeetparte.github.io/about/</guid>
-      <description>This blog was created as a medium for exploring the world of code from a creative perspective. &amp;ldquo;Creative&amp;rdquo; here refers to original ideas and new endeavours.
-Most content here will relate in some way to software development and code. However, since nothing exists in a bubble, I like to think that the most valuable ideas in computing will be those that take into account its interconnectedness with the larger world. Conceived with that in mind, you will find that as a whole, the explorations in this blog are holistic and seek to encompass a larger range of topics.</description>
     </item>
     
   </channel>

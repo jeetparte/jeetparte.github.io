@@ -5,8 +5,39 @@
 		<description>Recent content in Posts on sailing on lambdas ⛵️</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Sat, 29 Aug 2020 10:14:29 +0530</lastBuildDate>
+		<lastBuildDate>Sun, 06 Sep 2020 17:09:20 +0530</lastBuildDate>
 		<atom:link href="https://jeetparte.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>macOS: How to Filter Spam Mails and Block Senders</title>
+			<link>https://jeetparte.github.io/posts/how-to-filter-spam-mails-senders-macos/</link>
+			<pubDate>Sun, 06 Sep 2020 17:09:20 +0530</pubDate>
+			
+			<guid>https://jeetparte.github.io/posts/how-to-filter-spam-mails-senders-macos/</guid>
+			<description>If you&amp;rsquo;re on a spam mailing list and the unsuscribe option in Mail hasn&amp;rsquo;t worked, here are some alternate ways of putting them in the right place (out of your mailbox):
+1. Use rules to automate spam identification and deletion If you find yourself manually identifying spam mail and then deleting it, creating a Rule can help automate that for you.
+Here&amp;rsquo;s an example of a rule I use to delete spam mail before I even see them:</description>
+			<content type="html"><![CDATA[<p>If you&rsquo;re on a spam mailing list and the <a href="https://support.apple.com/en-in/guide/mail/mlhld3405766/mac">unsuscribe option</a> in Mail hasn&rsquo;t worked, here are some alternate ways of putting them in the right place (out of your mailbox):</p>
+<h2 id="1-use-rules-to-automate-spam-identification-and-deletion">1. Use rules to automate spam identification and deletion</h2>
+<p>If you find yourself manually identifying spam mail and then deleting it, <a href="https://support.apple.com/en-in/guide/mail/mlhlp1017/mac">creating a Rule</a> can help automate that for you.</p>
+<p>Here&rsquo;s an example of a rule I use to delete spam mail before I even see them:</p>
+<p><img src="/img/example-delete-rule.png" alt="example-delete-rule"></p>
+<h2 id="2-enable-junk-mail-filtering-and-let-mail-take-care-of-it-with-a-little-help">2. Enable junk mail filtering and let Mail take care of it (with a little help)</h2>
+<blockquote>
+<p>Mail can filter junk mail from your inbox, based on what it learns from you when you mark email messages as junk or not junk and the settings in Junk Mail preferences.</p>
+</blockquote>
+<p>I haven&rsquo;t tried this one but it sounds promising. You can choose to have Mail flag the junk mails (still keeping them in your inbox) or directly move them to the <em>Junk mailbox</em>.</p>
+<h2 id="3-block-the-sender">3. Block the sender</h2>
+<p>This one is similar to junk mail filtering - Mail can mark the sender&rsquo;s mails as blocked in your inbox or move them to the <em>Bin mailbox</em>.</p>
+<p><strong>P.S.</strong> That makes me wonder, why are there two mailboxes - <em>Junk</em> and <em>Bin</em> - for nearly the same thing?</p>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://support.apple.com/en-in/guide/mail/mlhlp1065/mac">Reduce junk mail in Mail on Mac</a></li>
+<li><a href="https://support.apple.com/en-in/guide/mail/mlhlp1017/mac">Use rules to manage emails you receive in Mail on Mac</a></li>
+<li><a href="https://support.apple.com/en-in/guide/mail/mlhl0898d7bb/mac">Block senders in Mail on Mac</a></li>
+</ul>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Waiting for my book order</title>
