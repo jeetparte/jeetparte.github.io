@@ -5,8 +5,44 @@
 		<description>Recent content in Posts on sailing on lambdas ⛵️</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Sun, 06 Sep 2020 17:09:20 +0530</lastBuildDate>
+		<lastBuildDate>Sun, 13 Sep 2020 20:37:56 +0530</lastBuildDate>
 		<atom:link href="https://jeetparte.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Week #1</title>
+			<link>https://jeetparte.github.io/posts/weekly-post-1/</link>
+			<pubDate>Sun, 13 Sep 2020 20:37:56 +0530</pubDate>
+			
+			<guid>https://jeetparte.github.io/posts/weekly-post-1/</guid>
+			<description>To help myself get blogging in a regular routine, I&amp;rsquo;ve decided to do a weekly post at the end of each week, about my week, in retrospect. Today&amp;rsquo;s post will be post number one.
+A Fresh Start It might have been the week before, but I&amp;rsquo;ve restarted my iOS learning journey with this book (and Programming iOS 13, which follows it).
+Previously (~3 years back), I&amp;rsquo;d done a hands-on course on Udemy while I was still in college.</description>
+			<content type="html"><![CDATA[<p>To help myself get blogging in a regular routine, I&rsquo;ve decided to do a weekly post at the end of each week, about <em>my</em> week, in retrospect. Today&rsquo;s post will be post number one.</p>
+<h2 id="a-fresh-start">A Fresh Start</h2>
+<p>It might have been the week before, but I&rsquo;ve restarted my iOS learning journey with <a href="https://www.oreilly.com/library/view/ios-13-programming/9781492074526/">this book</a> (and <a href="https://www.oreilly.com/library/view/programming-ios-13/9781492074601/"><em>Programming iOS 13</em></a>, which follows it).</p>
+<p>Previously (~3 years back), I&rsquo;d done a hands-on course on Udemy while I was still in college. While it gave me an overview of how mobile app development works, I hadn&rsquo;t actually learnt how to make apps (which was my goal). So when I tried to make my <em>own</em> app, I felt overwhelmed and didn&rsquo;t know the way forward.</p>
+<p>Fast forward to now, having been programming at my day job for nearly 2 years, I feel I have a good hang of the works. I&rsquo;m excited about breezing past the two books and then hopping onto the creation of my first app. (At ~60 pages a week, it might take a while.)</p>
+<p>That brings me to mention a book I recently finished reading.</p>
+<h2 id="recent-read---developer-hegemony">Recent read - Developer Hegemony</h2>
+<p>I&rsquo;d somehow stumbled on author <a href="https://www.daedtech.com/about">Erik Dietrich&rsquo;s</a> blog and something about the premise of <a href="http://amzn.to/2pA18wB">Developer Hegemony</a> captivated me. Here&rsquo;s some text from the book&rsquo;s description:</p>
+<blockquote>
+<p>It’s been said that software is eating the planet. The modern economy—the world itself—relies on technology. Demand for the people who can produce it far outweighs the supply. So why do developers occupy largely subordinate roles in the corporate structure?</p>
+</blockquote>
+<p>I first read a Kindle sample, thought the writing too cynical and put it away. I came back to it somehow (there was truth in it) and after reading the whole thing, I now find myself nodding to the author&rsquo;s ideas.</p>
+<p>If you work as a knowledge-worker in a salaried position and are itching to find greater leverage and freedom, this book can help put your current situation into perspective and embed you with a vision of the good things lying past that horizon. Gain leverage, become a free agent!</p>
+<h2 id="marketing-and-a-side-hustle">Marketing and a Side Hustle</h2>
+<p>Following some of the actionable advice from that book, I&rsquo;ve decided to</p>
+<ol>
+<li>blog more regularly (a viable form of marketing)</li>
+<li>have a side hustle</li>
+</ol>
+<p>The blogging will happen on this site, and the current side hustle goal is to make an iOS app and put it out on the <a href="https://www.apple.com/ios/app-store/">App Store</a>.</p>
+<h2 id="plans-for-this-site">Plans for this site</h2>
+<p>Eventually, I&rsquo;d like to host this site on its own domain (at the time of writing, its on GitHub pages) and give it a fresh look. The second of those things might mean a whole new project. Wonder when I&rsquo;ll get to it.</p>
+<h2 id="end">END</h2>
+<p>So that&rsquo;s it for this week. See you on another!</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>How to filter spam mails and block senders in Mail on Mac</title>

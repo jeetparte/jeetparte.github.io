@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Week #1</title>
+      <link>https://jeetparte.github.io/posts/weekly-post-1/</link>
+      <pubDate>Sun, 13 Sep 2020 20:37:56 +0530</pubDate>
+      
+      <guid>https://jeetparte.github.io/posts/weekly-post-1/</guid>
+      <description>To help myself get blogging in a regular routine, I&amp;rsquo;ve decided to do a weekly post at the end of each week, about my week, in retrospect. Today&amp;rsquo;s post will be post number one.
+A Fresh Start It might have been the week before, but I&amp;rsquo;ve restarted my iOS learning journey with this book (and Programming iOS 13, which follows it).
+Previously (~3 years back), I&amp;rsquo;d done a hands-on course on Udemy while I was still in college.</description>
+    </item>
+    
+    <item>
       <title>How to filter spam mails and block senders in Mail on Mac</title>
       <link>https://jeetparte.github.io/posts/how-to-filter-spam-mails-senders-mac/</link>
       <pubDate>Sun, 06 Sep 2020 17:09:20 +0530</pubDate>
@@ -110,17 +121,6 @@ Steps to reproduce  Make sure you&amp;rsquo;re connected to the Internet. Type a
 An ArgumentException is thrown when one of the arguments to a method is invalid. A more specific ArgumentException is an ArgumentNullException which (as you may have guessed) is thrown when an argument is invalid because it is null.
 The funny thing is that while the base class provides this constructor -
 public ArgumentException (string message, string paramName);  the one provided by the derived class is -</description>
-    </item>
-    
-    <item>
-      <title>Setting Up This Site</title>
-      <link>https://jeetparte.github.io/posts/setting-up-this-site/</link>
-      <pubDate>Sat, 22 Feb 2020 15:12:38 +0530</pubDate>
-      
-      <guid>https://jeetparte.github.io/posts/setting-up-this-site/</guid>
-      <description>A quick update about this site - I&amp;rsquo;m in the middle of setting it up so that it&amp;rsquo;s just as I&amp;rsquo;d want (or failing that, till all the essentials are met).
-Here&amp;rsquo;s what I&amp;rsquo;m working on -
- On the technical side, I need to get this site deployed. (It wasn&amp;rsquo;t when I wrote this!). I&amp;rsquo;m using Hugo - the static site generator. Also, need to enable comments so that we can talk to each other :P Importantly, I want this site to be organized so that it&amp;rsquo;s easy to navigate and view related content.</description>
     </item>
     
   </channel>

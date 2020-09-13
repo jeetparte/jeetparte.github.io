@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jeetparte.github.io/posts/</loc>
+    <lastmod>2020-09-13T20:37:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeetparte.github.io/tags/</loc>
+    <lastmod>2020-09-13T20:37:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeetparte.github.io/posts/weekly-post-1/</loc>
+    <lastmod>2020-09-13T20:37:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeetparte.github.io/tags/weekly-posts/</loc>
+    <lastmod>2020-09-13T20:37:56+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jeetparte.github.io/tags/automation/</loc>
     <lastmod>2020-09-06T17:09:20+05:30</lastmod>
   </url>
@@ -19,16 +39,6 @@
   
   <url>
     <loc>https://jeetparte.github.io/tags/macos/</loc>
-    <lastmod>2020-09-06T17:09:20+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeetparte.github.io/posts/</loc>
-    <lastmod>2020-09-06T17:09:20+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeetparte.github.io/tags/</loc>
     <lastmod>2020-09-06T17:09:20+05:30</lastmod>
   </url>
   
